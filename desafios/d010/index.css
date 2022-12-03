@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+body {
+    background-color: #84E0AA;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: IDroid;
+    src: url('idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**/
+
+a {
+    text-decoration: none;
+    color: #2DA25F;
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, #2DA25F, #126737, #063C1D);
+    margin: 0%;
+}
+
+#inicio {
+    color: #fff;
+    text-align: center;
+    padding: 1%;
+}
+
+#inicio > h1 {
+    text-transform: uppercase;
+}
+
+#inicio > p {
+    margin-bottom: 0%;
+    color: #9cb6a6;
+}
+
+nav {
+    text-align: left;
+    padding: 0% 0% 0.5% 0.5%;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1%;
+}
+
+/**/
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+section {
+    background-color: #fff;
+    padding-bottom: 2%;
+    border-radius: 0em 0em 1em 1em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+}
+
+#historia_mascote > h2 {
+    color: #063C1D;
+    margin: 0%;
+    padding: 2%;
+    font-family: 'IDroid', Arial, Helvetica, sans-serif;
+}
+
+.paragrafo {
+    text-align: justify;
+    text-indent: 4%;
+    margin: 0% 2% 2% 2%;
+}
+
+.meu_h3 {
+    padding-left: 1%;
+    font-family: 'IDroid', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #84E0AA, white);
+    color: #063C1D;
+    margin: 2%;
+}
+
+.imagem {
+    display: block;
+    margin: 2% auto 2% auto;
+}
+
+#video {
+    margin: 2% auto;
+    background-color: #063C1D;
+}
+
+#video > iframe {
+    display: block;
+    margin: auto;
+    padding: 2%;
+}
+
+.meu_h4 {
+    color: #fff;
+    margin: 1% 3% 0% 3%;
+    background-color: #2e9b5c;
+    padding: 2%;
+    border-radius: 1em 1em 0em 0em;
+    padding-left: 1%;
+}
+
+#extra {
+    margin: 0% 3% 1% 3%;
+    padding: 2%;
+    background-color: #b9e7cdd2;
+    border-radius: 0em 0em 1em 1em;
+}
+
+
+#extra > ul {
+    display: inline-block;
+}
+
+.versoes {
+    margin-left: 0%;
+    list-style-image: url('marca-de-verificacao.png');
+}
+
+.versoes_2 {
+    margin-left: 10%;
+    list-style-image: url('marca-de-verificacao.png');
+}
+
+.paragrafo_final {
+    text-align: justify;
+    text-indent: 4%;
+    margin: 2% 3% 1% 3%;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/**/
+
+footer {
+    background-color: #063C1D;
+    text-align: center;
+    color: #fff;
+    margin: 2% 0% 0% 0%;
+    padding: 0.5%;
+}
+
+footer > p {
+    margin: 0%;
+}

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*
+**TUDO QUE É ID EM HTML VIRA # EM CSS
+    QUANDO USA UM ID="teste":
+    #teste{}
+**TUDO QUE É CLASS EM HTML VIRA . EM CSS
+    QUANDO USA UM CLASS="teste":
+    .teste{}
+**ID É UNICO E CLASS PODE USAR EM VARIOS
+**COLOCAMOS : NO INICIO PARA DETERMINAR UMA PSEUDOCLASSE, USADO PARA DETERMINAR O ESTADO DE UM ELEMENTO
+    h1:hover {} -> PASSAR O MOUSE EM CIMA
+    a:visited {} -> LINK JA VISITADO
+    a:active {} -> LINK QUANDO É CLICADO
+    a::after {} -> DEPOIS DO ELEMENTO
+**USANDO > PARA INICIAR O BLOCO, SIGNIFICA QUE ALGO É FILHO DE OUTRO, EX.:
+    div > p {} -> UM PARAGRAFO QUE ESTA DENTRO DE UMA DIV É FILHO DELA E SÓ QUEREMOS MEXER NELE
+}
+*/
+
+* -> CONFIGURACAO GLOBAL {
+    height: 00% -> ALTURA **PODE USAR NO GRADIENTE
+}
+
+:root {
+    --
+    AREA GLOBAL PARA GUARDAR VARIAVEIS
+}
+
+traducoes {
+    height -> altura
+    width -> largura
+    top -> cima
+    right -> direita
+    bottom -> baixo
+    left -> esquerda
+    style -> estilo (solid, dashed)
+    color -> cor
+    content -> Conteudo
+}
+
+background {
+    background-color: #00000f; -> COR DO FUNDO
+    background-image: linear-gradient//radial-gradient("direção", #cor1, #cor2); -> COR DO FUNDO EM GRADIENTE
+}
+
+texto {
+    text-align: #;                          -> ALINHAMENTO DO TEXTO(left -> esquerda; center -> centro; right -> direita; justify -> justificado)
+    text-indent: 00px;                      -> PARA CRIAR UM PARAGRAFO
+    text-decoration: none;                  -> PARA RETIRAR O SUBLINHADO DOS LINKS
+}
+
+fontes {
+    font-family: Arial...;                   -> FONTES ESCOLHIDAS
+    font-size: 00em;                         -> TAMANHO DA FONTE
+    font-weight: #em;                        -> PESO DA FONTE (LIGHTER / NORMAL / BOLD / BOLDER)
+    font-decoration: underline;              -> LINHA EMBAIXO DO TEXTO
+
+    shorthand para facilitar                 -> font: "font-style" "font-weight" "font-size" "font-family";
+}
+
+medidas {
+    Medidas Absolutas -> cm, mm, in, px, pt, pc **PODE ALTERAR CONFORME O TAMANHO DO MONITOR
+    Medidas Seletivas -> em, ex, rem, vw, vh, % **1em GERALMENTE = 16px QUE É O PADRAO DO NAVEGADOR
+        RECOMENDADO USAR OU MEDIDA px OU em **MELHOR em POIS É TIPO %
+}
+
+blocos {
+    margin: auto;       -> CENTRALIZA CAIXAS HORIZONTALMENTE
+    padding-top: 00px;  -> DISTANCIA ENTRE TEXTO E BLOCO
+    margin-top: 00px;   -> DISTANCIA ENTRE BLOCO E OUTRO ELEMENTO
+    
+    outline-width: 00px;    -> TAMANHO DO BLOCO TRACEJADO
+    outline-style: dasehd;  -> ESTILO DO BLOCO TRACEJADO
+    outline-color: red;     -> COR DO BLOCO TRACEJADO
+    
+    PODEMOS SIMPLIFICAR P/ NAO TERMOS TANTAS LINHAS DE CODIGO EX.:
+    border: 00px "tipo" "cor";               -> BORDA: LARGURA, ESTILO, COR;
+    padding: 00px 00px 00px 00px;            -> EM CIMA, DIREITA, EM BAIXO, ESQUERDA;
+    padding: 00px;                           -> TODOS OS LADOS IGUAIS;
+    padding: 00px 00px;                      -> IGUAL PARA CIMA E BAIXO, IGUAL PARA AMBOS OS LADOS;
+    margin: 00px 00px 00px 00px;             -> EM CIMA, DIREITA, EM BAIXO, ESQUERDA;
+    margin: 00px auto 00px auto;             -> EM CIMA, CENTRALIZAÇÃO AUTOMATICA, EM BAIXO, CENTRALIZAÇÃO AUTOMATICA;
+    outline: 00px solid red;                 -> BORDA: LARGURA, ESTILO, COR;
+    
+    display: inline;      -> TRANSFORMA ELEMENTOS EM INLINE QUE FICAM NA MESMA LINHA; **NAO E POSSIVEL FAZER ALTURA E LARGURA;
+    display: inline-block -> MISTURA DOS DOIS VISANDO PODER USAR MAIS FERRAMENTAS;
+    display: block;       -> TRANSFORMA ELEMESNTOS EM BLOCOS, ONDE HA QUEBRA DE LINHA;    
+    }
+
+    SOMBRAS E BORDAS {
+    box-shadow: 1px 1px 1px black;   -> CRIA SOMBRA COM LARGURA, ALTURA, PREENCHIMENTO E COR **SEMPRE USAR NA COR UM PRETO FRACO;
+    border-radius: 00px;               -> FAZ UM ARREDONDAMENTO NOS VERTICES DAS CAIXAS 
+    border-radius: 00px 00px 00px 00px -> CIMA ESQUERDA; CIMA DIREITA; BAIXO DIREITA; BAIXO ESQUERDA
+    border-radius: 00px 00px           -> CIMA ESQUERDA e BAIXO DIREITA; CIMA DIREITA e BAIXO ESQUERDA
+    }

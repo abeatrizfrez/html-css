@@ -1,0 +1,187 @@
+<title> </title> -> TITULO DO SITE, DA ABA
+
+<title> <link:favicon> </title> -> ALTERA O ICON DO SITE
+
+<head> <link rel="stylesheet" href="style.css"> </head> -> LINK ARQUIVO CSS
+
+<h1> </h1> -> H É O TIUlO DA PAGINA
+
+<p> </p> -> TEXTO, PARAGRAFO
+
+<br> -> QUBRA DE LINHA
+
+-x-
+
+PARA QUESTAO DE SEMANTICA É BOM SEPARAR O CORPO DO SITE DENTRO DO <body> USANDO AS SEGUINTES TAGS:
+
+<body>
+
+    <header> </header> -> ESCREVER O INICIO DO SITE
+
+    <main> </main> -> ESCREVER O CORPO DO SITE
+
+    <footer> </footer> -> ESCREVER O FINAL DO SITE
+
+</body>
+
+<section> </section> -> SEM MUITA SEMANTICA, USADA PARA SUBSTITUIR AS DIVS E MARCAR SEÇÕES DE CONTEUDO
+<article> </article> -> ESCREVER ALGO QUE POSSA SER REUTILIZADO DEPOIS, ALGO COMO <p>
+<aside> </aside> -> PARA CRIAR UMA SEÇÃO COM UM CONTEUDO NAO NECESSARIAMENTE RELACIONADO COM O PRINCIPAL
+<nav> </nav> -> NAVEGAÇÃO
+<div> </div> -> A DIV DELIMITA O ESPAÇO, PODE MEXER DEPOIS NO CSS
+<span> </span> -> NAO DELIMITA ESPAÇO
+<label> </label> -> representa uma legenda para um item em uma interface de usuário.
+
+-x-
+
+<i> </i> -> TEXTO EM ITALICO **NAO FAZ SENTIDO USAR EM HTML
+<em> </em> -> TEXTO EM ITALICO COM ENFASE, SEMANTICO
+<i id=" "> </i> -> ID É O IDENTIFICADOR DO ELEMENTO NO JAVASCRIPT 
+<i style=" "> </i> -> STYLE SERVE PARA COLOCAR COMANDOS CSS DIRETO NO ELEMENTO
+<i class=" "> </i> -> CLASS SERVE PARA PADRONIZAR ELEMENTOS EM CSS
+<hr/> -> LINHA TRACEJADA
+<u> </u> -> TEXTO COM LINHA EM BAIXO **NAO FAZ SENTIDO USAR EM HTML
+<ins> </ins> -> TEXTO COM LINHA EM BAIXO COM ENFASE, SEMANTICO
+<b> </b> -> TEXTO EM NEGRITO **NAO FAZ SENTIDO USAR EM HTML
+<strong> </strong> -> TEXTO EM NEGRITO COM ENFASE, SEMANTICO
+<mark> </mark> -> MARCA TEXTO
+<mark style="background-color:"> </mark> -> MARCA TEXTO COM COR PERSONALIZADA
+<small> </small> -> TEXTO PEQUENO
+<sup> </sup> -> TEXTO ELEVADO TIPO ^2
+<sub> </sub> -> TEXTO EMBAIXO TIPO
+<del> </del> -> TEXTO "APAGADO", SUBLINHADO
+<blockquote cite=" "> </blockquote> -> CITAR UMA FRASE DE ALGUEM
+<q> </q> -> COLOCA ASPAS EM UMA CITAÇÃO
+<code> </code> -> FONTE MONOESPAÇADA, BOA PRA LER CODIGOS
+<pre> </pre> -> CONSIDERA QUEBRAS DE LINHA, ESPAÇAMENTOS ETC
+<bdo dir=" "> </bdo> -> TEXTO INVERTIDO
+
+-x-
+
+&lt; &gt; -> < >
+
+-x-
+
+<ol> </ol> => LISTA ORDENADA
+<ol> <li> " " </li> </ol> => LISTA ORDENADA E ITEM DA LISTA
+<ol type="1"> </ol> => LISTA ORDENADA NUMERICA
+<ol type="A"> </ol> => LISTA ORDENADA ALFABETICA MAIUSCULA
+<ol type="a"> </ol> => LISTA ORDENADA ALFABETICA MINUSCULA
+<ol type="I"> </ol> => LISTA ORDENADA ALGARISMOS ROMANOS MAIUSCULOS
+<ol type="i"> </ol> => LISTA ORDENADA ALGARISMOS ROMANOS MINUSCULOS
+<ol type="i" start="5"> </ol> => LISTA ORDENADA ALGARISMOS ROMANOS MINUSCULOS COMÇANDO EM V
+
+<ul> </ul> => LISTA NÃO ORDENADA
+<ul> <li> " " </li> </ul> => LISTA NÃO ORDENADA E ITEM DA LISTA
+<ul type="disc"> </ul> => LISTA NÃO ORDENADA COM BOLINHA PADRAO
+<ul type="circle"> </ul> => LISTA NÃO ORDENADA COM BOLINHA PRETA NAO PREENCHIDA
+<ul type="square"> </ul> => LISTA NÃO ORDENADA COM QUADRADO PRETO PREENCHIDO
+
+-x-
+
+<a href=" "> " " </a> -> ANCORA, LINKAR PARA ALGUM LUGAR
+<a href=" " title=" "> " " </a> -> TITLE, QUANDO PASSA O MOUSE EM CIMA MOSTRA UM TEXTO
+<a href=" " targert=" "> " " </a> -> TARGERT CRIA OPCOES PARA O LINK
+<a href=" " target="_self"> " " </a> -> TARGERT ABRE MA MESMA ABA
+<a href=" " target="_blank"> " " </a> -> TARGERT ABRE EM OUTRA ABA
+<a href=" " rel="next/prev"> " " </a> -> ANCORA, PROXIMO OU ANTERIOR
+<a href=" " rel="external/nofollow"> " " </a> -> ANCORA, VAI PRA FORA DO MEU SITE, NAO SIGA
+<a href=" " download=" nomedoarquivo.abc " type=" tipodoarquivo.abc "> " " </a> -> BAIXA UM ARQUIVO
+
+-x-
+
+<form> </form> -> CRIA UM FORMULÁRIO
+<form onsubmit=""> </form> -> VERIFICA SE OS DADOS ESTAO PREENCHIDOS CORRETAMENTE ANTES DE ENVIAR **MUITO IMPORTANTE
+<form action="#"> </form> -> ENDEREÇO DO SERVIDOR PARA ENVIAR AS INFORMAÇÕES
+<form method="get"> </form> -> ENVIA A INFORMAÇÃO DO FORMULARIO ENA URL
+<form method="post"> </form> -> ENVIA A INFORMAÇÃO DO FORMULARIO ENCAPSULADA, SEM MOSTRAR NADA NA URL
+<form target="_blank"> </form> -> ENVIA A INFORMAÇÃO EM UMA NOVA ABA
+<form autocomplete=" "> </form> -> PARA QUANDO ENTRAR NO SITE, O USUARIO ESTAR COM OS CAMPOS PREENCHIDOS OU NAO
+<form onsubmit="alert('');"> </form> -> QUANDO CLICA NO BOTAO APARECE UM ALERTA NO NAVEGADOR
+
+-x-
+
+<input type="text"/> -> CRIA UM CAMPO TEXTO
+<input type="number"/> -> CRIA UM CAMPO NUMERICO
+<input type="number min="/> -> MIN É O NUMERO MINIMO QUE PODE SER COLOCADO
+<input type="number max="/> -> MIN É O NUMERO MAXIMO QUE PODE SER COLOCADO
+<input type="number step="/> -> STEP É A QUANTIDADE DE NUMEROS QUE PULA
+<input type="password"/> -> CRIA UM CAMPO PARA SENHAS
+<input type="button" value=" "> -> CRIA UM BOTÃO **MESMA COISA QUE BUTTON
+<input type="range" min=" "/> -> MIN É O NUMERO MAXIMO QUE PODE SER COLOCADO
+<input type="range" max=" "/> -> MIN É O NUMERO MAXIMO QUE PODE SER COLOCADO
+<input type="range" value=" "/> -> VALUE É O NUMERO AUTOMATICO QUE FICA
+<input type="color"/> -> CRIA UM CAMPO DE COR
+<input type="email"/> -> CRIA UM CAMPO DE EMAIL E SÓ DEIXA ENVIAR COM @
+<input type="url"/> -> CRIA UM CAMPO DE EMAIL E SÓ DEIXA ENVIAR EXATAMENTE UMA URL
+<input type="date"/> -> CRIA UM CAMPO PARA COLOCAR A DATA
+<input type="week"/> -> CRIA UM CAMPO PARA COLOCAR A SEMANA **SÓ FUNCIONA NO CHROME E NO EDGE
+<input type="moth"/> -> CRIA UM CAMPO PARA COLOCAR O MES **SÓ FUNCIONA NO CHROME E NO EDGE
+<input type="checkbox"/> -> CRIA UMA CAIXA DE SELEÇÃO QUE PODE SELECIONAR MAIS DE 1
+<input type="checkbox" disable/> -> DISABLE A CAIXA DE SELEÇÃO FICA DESABILITADA
+<input type="checkbox" name=" "[]/> -> O COLCHETES NA FRENTE DO NOME MANDA PRO SERVIDOR UMA LISTA
+<input type="radio"/> -> CRIA UMA CAIXA DE SELEÇÃO QUE SÓ PODE SELECIONAR 1
+<input type="file"/> -> CRIA UM CAMPO PARA ENVIAR ARQUIVO
+<input type="file" multiple/> -> CRIA UM CAMPO PARA ENVIAR VARIOS ARQUIVOS
+<input type="search"/> -> CRIA UM CAMPO DE BUSCA **SO FUNCIONA NO CHROME
+
+-x-
+
+<button type="button"> " " </button> -> CRIA UM BOTÃO **MESMA COISA QUE INPUT
+<button type="submit"> " " </button> -> SUBMIT ENVIA OS DADOS DO FORMULARIO
+<button type="button" onclick="alert('')"> " " </button> -> ONCLICK QUANDO CLICA APARACE UMA MENSAGEM DE ALERTA NO NAVEGADOR
+<button type="button" onmouseover="alert('')"> " " </button> -> ONMOUSEOVER QUANDO PASSA O MOUSE EM CIMA APARACE UMA MENSAGEM DE ALERTA NO NAVEGADOR
+<button type="reset"> " " </button> -> RESET LIMPA OS CAMPOS DO FORMULARIO QUE ELE ESTA
+
+-x-
+
+<select name=" "> <option value=" "> " " </option> </select> -> CAIXA DE SELEÇÃO COM OPÇÕES
+<select name=" " multiple> <option value=" "> " " </option> </select> -> MULTIPLE PARA SELECIONAR VARIOS
+
+-x-
+
+<textarea name=" "> </textarea> -> AREA PARA DIGITAR UM TEXTO
+<textarea rows=" " name=" "> </textarea> -> AUMENTA O NUMERO DE LINHAS
+<textarea cols=" " name=" "> </textarea> -> AUMENTA O NUMERO DE LINHAS
+
+-x-
+
+<fieldset> </fieldset> -> CRIA UM RETANGULO EM VOLTA 
+<fieldset> <legend> " " </legend> </fieldset> -> LEGEND ESCREVE NO RETANGULO
+
+-x-
+
+<embed src="#"> -> EM UMA PARTE DO TEXTO CAREGAR UMA MIDIA EXTERNA **NAO COMPENSA USAR
+
+<iframe src="#"> </iframe> -> ABRIR PAGINAS DENTRO DO PROPRIO SITE COMO MAPS OU VIDEO NO YT
+
+<img scr="#"/> -> ADICIONAR IMAGEM
+<img scr="#" width=" "/> -> WIDTH LARGURA DA IMAGEM
+<img title=" " scr="#"/> -> TITLE QUANDO O MOUSE PASA EM CIMA DA IMAGEM ESCREVE
+<img alt=" " scr="#"/> -> ALT MELHOR PARA DEFICIENTES VISUAIS PARA DESCREVER A IMAGEM
+<picture> <source media="(max-width: 00px)" srcset=" #.png " type=" "> <img scr="#"/> </picture> -> SE A IMAGEM <IMG> FOR MAIOR QUE O MAX VAI CARREGAR A IMG, SENAO CARREGA A SOURCE
+
+<audio> <source src="#"> </audio> -> COLOCAR AUDIO NO SITE
+<audio controls> <source="#"> </audio> -> CONTROLS PARA COLOCAR CONTROLES
+<audio autoplay> <source="#"> </audio> -> AUTOPLAY PARA INICIAR A MUSICA AUTOMATICAMENTE
+
+<video controls autoplay> <source src="#"> </video> -> CARREGA UM VIDEO EXTERNO
+<video controls autoplays > <track src="#.vtt" kind="captions srclang="en"> </video> -> TRACK SAO LEGENDAS COM ARQUIVOS .VTT
+<video poster="#.abc">  </video> -> POSTER COLOCA UMA IMAGEM DE CAPA NO VIDEO
+
+-x-
+
+<table> <tr> <th> </th> </tr> </table> -> TABELA, TR É LINHA E TH É CABEÇALHO
+<table> <tr> <td> </td> </tr> </table> -> TABELA, TR É LINHA E TD É COLUNA
+<table> <thead> <tr> <th> </th> </tr> </thead> </table> -> THEAD ORGANIZA A CABEÇA DA TABELA
+<table> <tr> <tbody> <td> </td> </tbody> </tr> </table> -> TBODY ORGANIZA O CORPO DA TABELA
+<table> <tr> <tfoot> <td> </td> </tfoot> </tr> </table> -> TFOOT ORGANIZA O RODAPE DA TABELA
+<table border=""> <tr> <td> </td> </tr> </table> -> BORDER ADICIONA LINHAS NA TABELA
+<table width=""> <tr> <td> </td> </tr> </table> -> WIDTH ALTERA O TAMANHO
+<table aling=""> <tr> <td> </td> </tr> </table> -> ALING ALINHA A TABELA
+<table cellspacing=""> <tr> <td> </td> </tr> </table> -> CELLSPACING ESPAÇAMENTO ENTRE CELULAS
+<table cellpadding=""> <tr> <td> </td> </tr> </table> -> CELLPADDING AUMENTA A DISTANCIA DA BORDA PRO CONTEUDO
+<table summary=""> <tr> <td> </td> </tr> </table> -> SUMMARY NAO EXIBE MAS É A DESCRIÇÃO DOS DADOS DA TABELA
+<table> <caption> " " </caption> <tr> <td> </td> </tr> </table> -> CAPTION RESUMO QUE APARECE PARA O USUARIO
+
+-x-
