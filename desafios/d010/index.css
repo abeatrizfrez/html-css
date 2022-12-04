@@ -8,7 +8,7 @@ body {
 
 @font-face {
     font-family: IDroid;
-    src: url('idroid.otf') format('opentype');
+    src: url('media/idroid.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
