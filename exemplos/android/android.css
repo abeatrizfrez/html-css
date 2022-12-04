@@ -4,7 +4,7 @@
 
 @font-face{
     font-family: 'Android';
-    src: url("/Exemplos/android/idroid.otf") format('opentype');
+    src: url("idroid.otf") format('opentype');
     font-weight: normal;
 }
 
@@ -60,7 +60,7 @@ header > p {
     padding-right: 10px;
     padding-left: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
-    margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 nav {
