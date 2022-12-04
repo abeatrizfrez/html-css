@@ -42,6 +42,10 @@ traducoes {
 background {
     background-color: #00000f; -> COR DO FUNDO
     background-image: linear-gradient//radial-gradient("direção", #cor1, #cor2); -> COR DO FUNDO EM GRADIENTE
+    background-size: 00px 00px; -> TAMANHO DA IMAGEM DE FUNDO
+    background-repeat: repeat; -> REPETICAO DA IMAGEM DE FUNDO 
+    background-repeat: no-repeat//repeat-x//repeat-y; -> SEM REPETICAO // REPETICAO NA HORIZONTAL // REPETICAO NA VERTICAL
+    background-position: left center; -> CENTRALIZA UMA PARTE ESPECIFICA DA IMAGEM
 }
 
 texto {
