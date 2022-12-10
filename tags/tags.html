@@ -45,7 +45,7 @@ PARA QUESTAO DE SEMANTICA É BOM SEPARAR O CORPO DO SITE DENTRO DO <body> USANDO
 <b> </b> -> TEXTO EM NEGRITO **NAO FAZ SENTIDO USAR EM HTML
 <strong> </strong> -> TEXTO EM NEGRITO COM ENFASE, SEMANTICO
 <mark> </mark> -> MARCA TEXTO
-<mark style="background-color:"> </mark> -> MARCA TEXTO COM COR PERSONALIZADA
+<mark style=" "> </mark> -> MARCA TEXTO COM COR PERSONALIZADA
 <small> </small> -> TEXTO PEQUENO
 <sup> </sup> -> TEXTO ELEVADO TIPO ^2
 <sub> </sub> -> TEXTO EMBAIXO TIPO
@@ -176,12 +176,15 @@ PARA QUESTAO DE SEMANTICA É BOM SEPARAR O CORPO DO SITE DENTRO DO <body> USANDO
 <table> <thead> <tr> <th> </th> </tr> </thead> </table> -> THEAD ORGANIZA A CABEÇA DA TABELA
 <table> <tr> <tbody> <td> </td> </tbody> </tr> </table> -> TBODY ORGANIZA O CORPO DA TABELA
 <table> <tr> <tfoot> <td> </td> </tfoot> </tr> </table> -> TFOOT ORGANIZA O RODAPE DA TABELA
-<table border=""> <tr> <td> </td> </tr> </table> -> BORDER ADICIONA LINHAS NA TABELA
-<table width=""> <tr> <td> </td> </tr> </table> -> WIDTH ALTERA O TAMANHO
-<table aling=""> <tr> <td> </td> </tr> </table> -> ALING ALINHA A TABELA
+<table> <tr> <th scope="col"> </th> </tr> </table> -> SCOPE COL DIZ QUE É O TITULO DAQUELA COLUNA
+<table> <tr> <th scope="row"> </th> </tr> </table> -> SCOPE ROW DIZ QUE É O TITULO DAQUELA LINHA
+<table> <tr> <td colspan="2"> </td> </tr> </table> -> COLSPAN EXPANDE O TEXTO PRA OUTRAS COLUNAS
+<table> <tr> <td rowspan="2"> </td> </tr> </table> -> COLSPAN EXPANDE O TEXTO PRA OUTRAS LINHAS
 <table cellspacing=""> <tr> <td> </td> </tr> </table> -> CELLSPACING ESPAÇAMENTO ENTRE CELULAS
 <table cellpadding=""> <tr> <td> </td> </tr> </table> -> CELLPADDING AUMENTA A DISTANCIA DA BORDA PRO CONTEUDO
 <table summary=""> <tr> <td> </td> </tr> </table> -> SUMMARY NAO EXIBE MAS É A DESCRIÇÃO DOS DADOS DA TABELA
 <table> <caption> " " </caption> <tr> <td> </td> </tr> </table> -> CAPTION RESUMO QUE APARECE PARA O USUARIO
+
+
 
 -x-

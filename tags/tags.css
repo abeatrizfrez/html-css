@@ -104,6 +104,8 @@ sombras e bordas {
     border-radius: 00px;               -> FAZ UM ARREDONDAMENTO NOS VERTICES DAS CAIXAS 
     border-radius: 00px 00px 00px 00px -> CIMA ESQUERDA; CIMA DIREITA; BAIXO DIREITA; BAIXO ESQUERDA
     border-radius: 00px 00px           -> CIMA ESQUERDA e BAIXO DIREITA; CIMA DIREITA e BAIXO ESQUERDA
+    border-collapse: separate;         -> NAO DEIXA AS BORDAS SE ENCOSTAREM
+    border-collapse: collapse;         -> DEIXA AS BORDAS SE ENCOSTAREM
 }
 
 centralizar caixas {
@@ -111,4 +113,11 @@ centralizar caixas {
     left: 50%; -> PARA MOVER O CONTEUDO DENTRO DA CAIXA **PRECISA SER ABSOLUTO
     top: 50%; -> PARA MOVER O CONTEUDO DENTRO DA CAIXA **PRECISA SER ABSOLUTO
     transform: translate(-50%, -50%); -> PARA CENTRALIZAR A CAIXA DENTRO DO CONTEUDO
+}
+
+pseudoclasse {
+    :nth-child(2n) -> CRIA UM EFEITO ZEBRADO COMO EM TABELAS
+    :nth-child(2n-1) -> CRIA UM EFEITO ZEBRADO COMO EM TABELAS MAS INVERTE AS CORES
+    :nth-child(odd) -> CRIA UM EFEITO ZEBRADO COMO EM TABELAS NOS NUMEROS IMPARES
+    :nth-child(even) -> CRIA UM EFEITO ZEBRADO COMO EM TABELAS NOS NUMEROS PARES
 }
