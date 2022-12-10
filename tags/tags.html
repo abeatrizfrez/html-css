@@ -177,9 +177,11 @@ PARA QUESTAO DE SEMANTICA É BOM SEPARAR O CORPO DO SITE DENTRO DO <body> USANDO
 <table> <tr> <tbody> <td> </td> </tbody> </tr> </table> -> TBODY ORGANIZA O CORPO DA TABELA
 <table> <tr> <tfoot> <td> </td> </tfoot> </tr> </table> -> TFOOT ORGANIZA O RODAPE DA TABELA
 <table> <tr> <th scope="col"> </th> </tr> </table> -> SCOPE COL DIZ QUE É O TITULO DAQUELA COLUNA
-<table> <tr> <th scope="row"> </th> </tr> </table> -> SCOPE ROW DIZ QUE É O TITULO DAQUELA LINHA
+<table> <tr> <th scope="colgroup"> </th> </tr> </table> -> SCOPE COLGROUP DIZ QUE É O TITULO DAQUELE GRUPO DE COLUNAS
+<table> <tr> <th scope="row"> </th> </tr> </table> -> SCOPE ROWGROUP DIZ QUE É O TITULO DAQUELE GRUPO DE LINHAS
+<table> <tr> <th scope="rowgroup"> </th> </tr> </table> -> SCOPE COLGROUP DIZ QUE É O TITULO DAQUELAS COLUNAS
 <table> <tr> <td colspan="2"> </td> </tr> </table> -> COLSPAN EXPANDE O TEXTO PRA OUTRAS COLUNAS
-<table> <tr> <td rowspan="2"> </td> </tr> </table> -> COLSPAN EXPANDE O TEXTO PRA OUTRAS LINHAS
+<table> <tr> <td rowspan="2"> </td> </tr> </table> -> ROWSPAN EXPANDE O TEXTO PRA OUTRAS LINHAS
 <table cellspacing=""> <tr> <td> </td> </tr> </table> -> CELLSPACING ESPAÇAMENTO ENTRE CELULAS
 <table cellpadding=""> <tr> <td> </td> </tr> </table> -> CELLPADDING AUMENTA A DISTANCIA DA BORDA PRO CONTEUDO
 <table summary=""> <tr> <td> </td> </tr> </table> -> SUMMARY NAO EXIBE MAS É A DESCRIÇÃO DOS DADOS DA TABELA
