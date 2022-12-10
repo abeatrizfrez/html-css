@@ -13,13 +13,14 @@
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 body {
     background-color: wheat;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
 header h1 {
     color: #fff;
     font-family: var(--fonte-titulo);
-    font-size: 13em;
+    font-size: 8em;
     text-align: center;
     font-variant: small-caps;
 }
@@ -46,22 +47,47 @@ header a {
 }
 
 main {
-    background-color: green;
+    background-color: #fff;
     font-family: var(--fonte-paragrafos);
-    font-size: 4em;
-    padding: 3%;
+    font-size: 3em;
 }
 
-#imagem1 {
-    background-image: url('media/background001.jpg');
-    position: absolute;
-    padding: 0%;
-    width: 100%;
-    background-color: darkgreen;
-    background-attachment: fixed;
-    
+main p {
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 3%;
 }
+
+section.imagem {
+    padding: 5%;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#imagem01 {
+    background-image: url('media/background001.jpg');
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.459);
+    color: #fff;
+    display: inline-block;
+    padding: 0%;
+}
+
+section#imagem02 {
+    background-image: url('media/background002.jpg');
+}
+
 
 footer {
-    background-color: yellow;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
 }
